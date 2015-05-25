@@ -79,3 +79,13 @@ main > div > a.selected {
 a:not([href]) {
     cursor: pointer;
 }
+
+footer {
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

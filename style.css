@@ -48,13 +48,34 @@ main {
 main > div {
     display: inline-block;
     width: 25%;
-    background-color: lightgray;
 }
 
 main > div > a {
     display: block;
     text-align: center;
     padding: 20px;
+    background-color: lightgray;
+    -webkit-transition: box-shadow .5s ease-in;
+}
+
+main > div > a.selected {
+    background-color: lightblue;
+    box-shadow: 0px 0px 10px 0px black;
+    z-index: 1;
+    
+    animation: bubble .2s;
+}
+
+@keyframes bubble {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 main > div:not(:first-child) {
@@ -62,18 +83,12 @@ main > div:not(:first-child) {
     border-left: 1px solid #FFF;
 }
 
-main > div:first-child {
+main > div:first-child a {
     border-radius: 5px 0 0 5px;
 }
 
-main > div:last-child {
+main > div:last-child a {
     border-radius: 0 5px 5px 0;
-}
-
-main > div > a.selected {
-    background-color: lightblue;
-    box-shadow: 0px 0px 10px 0px black;
-    z-index: 1;
 }
 
 a:not([href]) {

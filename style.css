@@ -95,6 +95,25 @@ a:not([href]) {
     cursor: pointer;
 }
 
+article > #circle {
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    background-color: indianred;
+    border-radius: 50%;
+}
+
+article > #triangle {
+    margin: 20px auto;
+    height: 0px;
+    width: 0px;
+    
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    
+    border-left: 100px solid white;
+}
+
 footer {
     text-align: center;
     background-color: white;

@@ -20,6 +20,7 @@ html, body {
 
 body {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+    padding-bottom: 40px;
 }
 
 header {
@@ -150,6 +151,28 @@ article > #triangle {
     border-bottom: 100px solid transparent;
     
     border-left: 100px solid white;
+}
+
+article#flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+article#flex > div {
+    background-color: darkorange;
+    padding: 20px;
+    flex-grow: 1;
+    margin: 5px;
+    align-self: flex-start;
+}
+
+article#flex > div:first-child {
+    flex-grow: 2;
+}
+
+article#flex > div:nth-child(2) {
+    flex-grow: 2;
 }
 
 footer {

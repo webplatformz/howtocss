@@ -154,25 +154,17 @@ article > #triangle {
 }
 
 article#flex {
+    height: 500px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 article#flex > div {
     background-color: darkorange;
-    padding: 20px;
-    flex-grow: 1;
-    margin: 5px;
-    align-self: flex-start;
-}
-
-article#flex > div:first-child {
-    flex-grow: 2;
-}
-
-article#flex > div:nth-child(2) {
-    flex-grow: 2;
+    height: 200px;
+    width: 200px;
 }
 
 footer {
